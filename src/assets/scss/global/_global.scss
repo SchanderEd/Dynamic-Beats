@@ -1,0 +1,66 @@
+html {
+  background-color: $background;
+  color: $textColor;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  margin: 0;
+  font-family: 'DarkerGrotesque';
+}
+
+.section-heading {
+  margin: 0;
+  margin-right: 22px;
+  font-family: 'DarkerGrotesque';
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.section-decoration {
+  position: relative;
+  display: inline-block;
+  @extend %borderSection;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0;
+  right: 0;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  left: 0;
+  right: 0;
+}
+
+.page {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.page-opacity {
+  opacity: .5;
+}

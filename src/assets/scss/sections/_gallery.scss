@@ -1,0 +1,30 @@
+.gallery {
+  position: relative;
+  padding-top: 123px;
+
+  & .light-svg {
+    position: absolute;
+    width: 110px;
+    top: 0;
+    right: 0;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  &__light-wrapper {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__swiper {
+    display: none;
+  }
+
+  &__swiper-controls {
+    display: none;
+  }
+}

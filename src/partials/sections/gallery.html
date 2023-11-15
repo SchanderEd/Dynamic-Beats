@@ -1,0 +1,41 @@
+<section class="gallery" id="gallery">
+  <div class="gallery__light-wrapper animate__animated animate__fadeIn wow">
+    <svg class="light-svg">
+      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#light"></use>
+    </svg>
+  </div>
+  <div class="container gallery__container">
+    <div class="gallery__top animate__animated animate__fadeIn wow" data-wow-duration="1s">
+      <h4 class="gallery__heading section-heading">gallery</h4>
+      <span class="section-decoration"></span>
+    </div>
+    <div class="gallery__swiper-controls-wrapper">
+      <div class="gallery__swiper-controls">
+        <div class="gallery__swiper-control gallery__swiper-prev swiper-button-prev">
+          <svg class="swiper-arrow swiper-arrow__prev">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="gallery__swiper-control gallery__swiper-next swiper-button-next">
+          <svg class="swiper-arrow swiper-arrow__next">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    @include('../components/panels.html')
+    <div class="gallery__swiper swiper animate__animated animate__fadeInUp wow" data-wow-duration="1s">
+      <div class="gallery__swiper-wrapper swiper-wrapper">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g1.webp" alt="dj events">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g2.webp" alt="Dynamic Beats events">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g3.webp" alt="Dynamic Beats equipment">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g4.webp" alt="dance competitions">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g5.webp" alt="dj equipment">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g6.webp" alt="dj weddings">
+        <img class="gallery__slide swiper-slide" src="../../assets/images/g7.webp" alt="dj equipment on departure">
+      </div>
+      <div class="gallery__prev swiper-button-prev"></div>
+      <div class="gallery__next swiper-button-next"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+@mixin fonts($font-family, $srcWoff, $fw, $fd, $fs) {
+  @font-face {
+    font-family: $font-family;
+    src: $srcWoff;
+    font-weight: $fw;
+    font-display: $fd;
+    font-style: $fs;
+  }
+}
+
+@include fonts('DMSans', url(../fonts/DMSans/DMSans-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('DMSans', url(../fonts/DMSans/DMSans-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('DMSans', url(../fonts/DMSans/DMSans-Bold.ttf), 700, swap, normal); // Bold
+@include fonts('DMSans-Italic', url(../fonts/DMSans/DMSans-BoldItalic.ttf), 700, swap, normal); // BoldItalic
+
+@include fonts('DarkerGrotesque', url(../fonts/DarkerGrotesque/DarkerGrotesque-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('DarkerGrotesque', url(../fonts/DarkerGrotesque/DarkerGrotesque-SemiBold.ttf), 600, swap, normal); // SemiBold
+@include fonts('DarkerGrotesque', url(../fonts/DarkerGrotesque/DarkerGrotesque-Bold.ttf), 700, swap, normal); // Bold
+
+@include fonts('Inter', url(../fonts/Inter/Inter-SemiBold.ttf), 600, swap, normal); // SemiBold
+@include fonts('Inter', url(../fonts/Inter/Inter-Bold.ttf), 700, swap, normal); // Bold
+
+body {
+  font-family: 'DMSans';
+}

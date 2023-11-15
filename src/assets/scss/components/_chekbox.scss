@@ -1,0 +1,67 @@
+.checkbox {
+  display: inline-block;
+  cursor: pointer;
+
+  &__inp {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+
+    &:checked+.checkbox__inner {
+      color: green;
+    }
+
+    &:checked+.checkbox__inner::before {
+      background: linear-gradient(180deg, #3b3b3b 0%, #08b116 100%);
+    }
+
+    &:checked+.checkbox__inner::after {
+      left: 59px;
+      background-color: white;
+    }
+
+    &:focus+.checkbox__inner::before {
+      outline: 1px solid grey;
+      outline-offset: 3px;
+    }
+  }
+
+  &__inner {
+    display: inline-block;
+    position: relative;
+    width: 78px;
+    text-align: center;
+    padding: 0px;
+    color: rgb(233, 29, 29);
+    font-size: 12px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 3px;
+      top: 18px;
+      width: 12px;
+      height: 12px;
+      border-radius: 15px;
+      background-color: #B5B5B5;
+      transition: background-color .3s ease-in-out, left .3s ease-in-out;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 78px;
+      height: 17px;
+      border-radius: 35px;
+      background: linear-gradient(180deg, #3B3B3B 0%, #2C2C2C 100%);
+      box-shadow: 0px 6.333333492279053px 12.666666984558105px 0px rgba(11, 11, 11, 0.25), 0px 2.1111111640930176px 2.1111111640930176px 0px #3D3D3D inset, 0px -2.1111111640930176px 2.1111111640930176px 0px #2A2A2A inset;
+      transition: background-color .3s ease-in-out;
+    }
+  }
+}

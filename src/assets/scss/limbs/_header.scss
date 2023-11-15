@@ -1,0 +1,56 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+  }
+
+  &__nav-list {
+    position: relative;
+    display: flex;
+    gap: 38px;
+  }
+
+  &__nav-link {
+    font-family: 'DarkerGrotesque';
+    font-size: 20px;
+    color: $textColor;
+    transition:  color .3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover, &:focus {
+      color: $textHover;
+    }
+  }
+}
+
+.nav-open {
+  display: none;
+  background-color: transparent;
+
+  &__svg {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.nav-close {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: transparent;
+
+  &__svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.nav-close--active {
+  display: block;
+}

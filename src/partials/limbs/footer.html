@@ -1,0 +1,78 @@
+<footer class="footer animate__animated animate__fadeIn wow" data-wow-duration="2s">
+  <div class="container footer__container">
+    <div class="footer__top">
+      <img src="./assets/images/logo-footer.png" alt="" class="footer__logo">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#about" class="footer__nav-link">About us</a></li>
+          <li class="footer__nav-item"><a href="#events" class="footer__nav-link">Events</a></li>
+          <li class="footer__nav-item"><a href="#gallery" class="footer__nav-link">Gallery</a></li>
+          <li class="footer__nav-item"><a href="#services" class="footer__nav-link">Services</a></li>
+          <li class="footer__nav-item"><a href="#contact" class="footer__nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/marks.thought?mibextid=LQQJ4d" class="social-list__link" target="_blank">
+            <svg class="social-svg">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link" target="_blank">
+            <svg class="social-svg">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/mark-smith-dj" class="social-list__link" target="_blank">
+            <svg class="social-svg">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#linke"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <ul class="contact-list">
+        <li class="contact-list__item">
+          <svg class="contact-svg map-svg">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#mapicon"></use>
+          </svg>
+          <a href="https://maps.app.goo.gl/chn6gFTjgvdPfa1Y6" class="contact-list__link" target="_blank">Salt Lake City,
+            Utah</a>
+        </li>
+        <li class="contact-list__item">
+          <svg class="contact-svg mail-svg">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#mail"></use>
+          </svg>
+          <a href="mailto:marks_thought@yahoo.com" class="contact-list__link">marks_thought@yahoo.com</a>
+        </li>
+      </ul>
+      <a href="#" class="creators">Design and dev <strong>PlugInWeb</strong></a>
+      <p class="year">2023</p>
+    </div>
+  </div>
+</footer>
+</main>
+<script type="text/javascript">
+  const body = document.querySelector('body');
+
+  document.getElementById("hideAll").style.opacity = "10";
+  window.onload = function () {
+    body.classList.remove('lock-scroll');
+    document.getElementById("hideAll").style.opacity = "0"
+    document.getElementById("hideAll").style.zIndex = "0";
+    new WOW().init();
+  }
+</script>
+<script src="./assets/js/splide.min.js"></script>
+<script src="./assets/js/splide-extension-auto-scroll.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/main.min.js" type="module"></script>
+</body>
+
+</html>

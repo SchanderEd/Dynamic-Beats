@@ -1,0 +1,53 @@
+.events {
+  position: relative;
+  padding-top: 153px;
+
+  &__top {
+    position: relative;
+    display: flex;
+  }
+
+  &__middle {
+    padding-top: 18px;
+  }
+
+  &__middle-content {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+
+    &::after {
+      content: '';
+      padding-top: 2px;
+      padding-left: 38px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(../images/muted.png);
+    }
+  }
+}
+
+.events__light-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.events__light-wrapper .light-big-svg {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 125px;
+  height: 123px;
+  z-index: -1;
+}
+
+.events__light-wrapper .light-small-svg {
+  position: absolute;
+  top: -38px;
+  right: 48px;
+  width: 138px;
+  height: 117px;
+  z-index: -1;
+}

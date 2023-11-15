@@ -1,0 +1,23 @@
+.lock-scroll {
+  overflow: hidden;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url(../images/loader.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hideAll{
+  position: fixed;
+  left: 0px; 
+  right: 0px; 
+  top: 0px; 
+  bottom: 0px; 
+  background-color: #181818;
+  transition: opacity .3s ease-in;
+}

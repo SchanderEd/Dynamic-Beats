@@ -1,0 +1,174 @@
+.services {
+  position: relative;
+  padding-top: 136px;
+
+  & .light-svg {
+    position: absolute;
+    width: 150px;
+    top: 110px;
+    left: 138px;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 75px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+    padding: 20px 8px 0px;
+    border-radius: 20px;
+    border: 2px solid #D1D1D1;
+    z-index: 5;
+  }
+
+  &__card-top {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    margin-bottom: 23px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #C2C2C2;
+  }
+
+  &__card-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  .services-img::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .services-dj::before {
+    background-image: url(../images/dj.png);
+  }
+
+  .services-sound::before {
+    background-image: url(../images/sound.png);
+  }
+
+  .services-rental::before {
+    background-image: url(../images/rental.png);
+  }
+
+  &__card-middle {
+    position: relative;
+    flex: 1;
+    margin-bottom: 69px;
+    padding: 0px 13px;
+
+    & .light-card-svg {
+      position: absolute;
+      bottom: 29%;
+      left: 55%;
+    }
+  }
+
+  &__package-heading {
+    width: 359px;
+    margin: 0;
+    margin-bottom: 12px;
+    line-height: 23px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__package-list {
+    margin-bottom: 11px;
+  }
+
+  &__package-item {
+    padding-left: 3px;
+  }
+
+  &__package-item:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  &__package-content {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    color: #C8C8C8;
+
+    &::before {
+      position: relative;
+      content: '— ';
+    }
+  }
+
+  &__package-sound {
+    margin-bottom: 38px;
+  }
+
+  .equipment-list {
+    margin-bottom: 30px;
+  }
+
+  .equipmet-before-subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__equipment-subtitle {
+    font-size: 18px;
+  }
+
+  &__package-equipment {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #D3D3D3;
+    text-decoration: underline;
+  }
+
+  &__card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 59px;
+  }
+
+  &__card-link {
+    width: 300px;
+    height: 60px;
+    @extend %button;
+  }
+
+  &__swiper-control {
+    display: none;
+  }
+
+  &__swiper-controls {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: space-between;
+    width: 87px;
+    fill: #fff;
+    stroke: #fff;
+  }
+
+  &__swiper-control {
+    width: 36px;
+    height: 36px;
+  }
+}

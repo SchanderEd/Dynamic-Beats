@@ -1,0 +1,49 @@
+<section class="contact-us" id="contact">
+  <div class="popup-overlay">
+    <div class="popup-container">
+      <div class="popup-card">
+        <h2>Thanks for the question!</h2>
+        <p>We will contact you as soon as possible.</p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+  </div>
+  <div class="animate__animated animate__fadeIn wow" data-wow-delay="1s" data-wow-duration="2s">
+    <svg class="light-small-svg">
+      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#light"></use>
+    </svg>
+  </div>
+  <div class="animate__animated animate__fadeIn wow" data-wow-delay="1.4s" data-wow-duration="2s">
+    <svg class="light-middle-svg">
+      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#light"></use>
+    </svg>
+  </div>
+  <div class="animate__animated animate__fadeIn wow" data-wow-delay="1.6s" data-wow-duration="2s">
+    <svg class="light-big-svg">
+      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#light"></use>
+    </svg>
+  </div>
+  <div class="container contact-us__container">
+    <div class="contact-us__top animate__animated animate__fadeIn wow" data-wow-duration="1s" data-wow-delay="1s">
+      <h4 class="contact-us__heading section-heading">Contact us</h4>
+      <span class="section-decoration"></span>
+    </div>
+    <div class="contact-us__form-wrapper">
+      <form action="./sendmail.php" class="form" id="form">
+        <label class="form__input-wrapper">
+          <span class="form__field-heading animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay=".4s">Name</span>
+          <input type="text" class="form__input animate__animated animate__fadeIn wow _req" name="name" data-wow-duration="2s" data-wow-delay=".6s">
+        </label>
+        <label class="form__input-wrapper">
+          <span class="form__field-heading animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay=".8s">Email</span>
+          <input type="text" class="form__input animate__animated animate__fadeIn wow _req _email" name="mail" data-wow-duration="2s" data-wow-delay="1s">
+        </label>
+        <label class="form__input-wrapper">
+          <span class="form__field-heading animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay="1.2s">Message</span>
+          <textarea name="message" cols="30" rows="10" class="form__textarea animate__animated animate__fadeIn wow _req" placeholder="Ask us a question or request a quote..." data-wow-duration="2s" data-wow-delay="1.4s"></textarea>
+        </label>
+        <button class="form__btn animate__animated animate__fadeIn wow" data-wow-duration="2s" data-wow-delay="1.2s">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,120 @@
+.footer {
+  padding-bottom: 44px;
+  background-color: $footerBg;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  &__top, &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top {
+    height: 109px;
+  }
+
+  &__bottom {
+    align-items: end;
+  }
+
+  &__logo {
+    height: 60px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  &__nav {
+    padding-left: 145px;
+  }
+
+  &__nav-list {
+    position: relative;
+    z-index: 99;
+  }
+
+  &__nav-link {
+    font-family: 'DarkerGrotesque';
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $black;
+    transition:  color .3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+
+.contact-list {  
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+  }
+}
+
+.contact-svg, .social-svg {
+  width: 24px;
+  height: 24px;
+  fill: $black;
+}
+
+.contact-svg {
+  margin-right: 10px;
+}
+
+.creators {
+  display: inline-block;
+  padding-top: 45px;
+  padding-left: 76px;
+  font-family: 'DarkerGrotesque';
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: $black;
+
+  & strong {
+    text-decoration: underline;
+    color: $textColor;
+  }
+}
+
+.social-list {
+  position: relative;
+  padding-top: 6px;
+  padding-left: 15px;
+  z-index: 99;
+
+  &__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.year {
+  font-family: 'DarkerGrotesque';
+  font-size: 20px;
+  font-weight: 600;
+  color: $black;
+}
